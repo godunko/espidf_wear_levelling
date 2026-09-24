@@ -23,10 +23,8 @@ package ESPIDF.Wear_Levelling is
 
 private
 
-   type wl_handle_t is record
-      Value : int32_t := -1;
-   end record with Convention => C, Size => int32_t'Size;
+   type wl_handle_t is new int32_t with Convention => C, Default_Value => -1;
 
-   WL_INVALID_HANDLE : constant wl_handle_t := (Value => -1);
+   WL_INVALID_HANDLE : constant wl_handle_t := -1;
 
 end ESPIDF.Wear_Levelling;
