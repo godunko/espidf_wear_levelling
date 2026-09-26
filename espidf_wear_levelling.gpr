@@ -11,8 +11,8 @@ with "espidf.gpr";
 library project ESPIDF_Wear_Levelling is
 
    for Library_Name use "adaespidf_wear_levelling";
-   for Library_Dir use ".libs/" & ESPIDF.Crate_Library_Dir;
-   for Object_Dir use ".objs/" & ESPIDF.Crate_Object_Dir;
+   for Library_Dir use ESPIDF.Crate_Library_Dir;
+   for Object_Dir use ESPIDF.Crate_Object_Dir;
    for Source_Dirs use ("source");
 
    package Compiler renames ESPIDF.Compiler;
