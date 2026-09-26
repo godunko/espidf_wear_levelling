@@ -1,9 +1,12 @@
 name = "espidf_wear_levelling"
 version = "0.1.0-dev"
 website = "https://github.com/godunko/espidf_wear_levelling"
-description = "A0B: Ada/ESP-IDF: Wear Levelling API bindings"
+description = "Ada/ESP-IDF: Wear Levelling bindings"
 long-description = """
-Ada bindings for the ESP-IDF `esp_wear_levelling` component, providing wear leveling support over raw flash partitions on ESP32 microcontrollers.
+Ada bindings for the ESP-IDF Wear Levelling component (`wear_levelling`).
+
+Covers mounting of the wear levelling layer on top of a flash partition (`wl_mount`).
+The resulting handle is used by the FAT filesystem and USB mass storage bindings.
 """
 
 authors = ["Vadim Godunko"]
