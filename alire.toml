@@ -1,5 +1,5 @@
 name = "espidf_wear_levelling"
-version = "0.1.0-dev"
+version = "0.1.0"
 website = "https://github.com/godunko/espidf_wear_levelling"
 description = "Ada/ESP-IDF: Wear Levelling bindings"
 long-description = """
