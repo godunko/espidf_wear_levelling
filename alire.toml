@@ -21,4 +21,4 @@ generate_c = false
 generate_gpr = true
 
 [[depends-on]]
-espidf_partition = "*"
+espidf_partition = "^0.1.0"
